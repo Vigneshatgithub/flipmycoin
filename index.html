@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+flip my coin
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+<!--<link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>-->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/flipmy.css" />
+<link rel="icon" type="image/icon" href="images/flipmyfavi.ico">
+<script src="js/flipmy.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36990095-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=412742978744845&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- <div class="design-straight"></div> -->
+<span id='what'>Coin Toss simulation</span><span id='credits'><a href='http://vigneshv.wordpress.com/2014/11/15/flip-my-coin/' target='_blank'>About the App</a></span>
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-xs-12 col-md-8 col-md-offset-2'>
+<div class="dynamic" >
+
+<h2>What's in your mind?</h2>
+
+<textarea rows="5" cols="100"  maxlength='140' id="mindtext" name="mindtext" autofocus="autofocus"  class="textui" required></textarea>
+<br/>
+<button type="button" class="btn btn-primary btn-lg" id="scr1">Next</button>
+<span id='textclick' class="label label-info inline">uff! you can share with us too! </span>
+</div>
+
+<div class="ht">
+<!--
+		<div class="pick tog" id="chead">Heads</div>
+	
+		<div class="pick got">or</div>
+	
+		<div class="pick tog" id="ctail">Tails</div>
+		-->
+		<div class="col-xs-8 col-md-8">
+		
+			<div  class="thumbnail pick" id="chead">
+				Heads
+			</div>
+		
+			<div  class="thumbnail pick" id="ctail">
+				Tails
+			</div>
+		</div>
+</div>
+
+<div class="httext">
+<h2 id="userchosen"></h2>
+<textarea rows="7" cols="100" maxlength='140' id="httext" name="httext" autofocus="autofocus"  class="textui" required></textarea>
+<br/>
+<button class="btn btn-lg btn-primary next" type="button" id="scr2">Next</button>
+<span id='clickable' class="label label-info inline">choose again?</span>
+<input id="ucid" type="hidden" name="userchoice" />
+</div>
+
+<div class="intheair">
+<!--<img src='images/intheair.gif' />-->
+<div id="htcoin">
+Flipping...
+</div>
+<span id='clickable' class="label label-info inline"> click / tap the coin to reveal </span>
+</div>
+
+<div class="event">
+<div class="col-xs-12 col-md-8">
+		  
+		  <div><span id="anno">It is</span></div>
+		  <div class="chk"><span id="dis1"></span></div>
+		<div class="fdp"><span>My thought </span><p id="dis2"></p></div>		  
+		<div class="fdp"><span>and I expected </span><span id="dis3"></span><span> for </span><p id="dis4"></p></div>
+		<div class="fdp"><button type="button" class="btn btn-warning btn-lg" id="oncemore">Flip again?</button></div>
+<div class="fb-like-box" data-href="https://www.facebook.com/flipmycoin" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false"></div>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://flipmy.co.in/" data-text="Toss the coin and decide for yourself, its purely fun" data-hashtags="flipmycoin">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		  
+</div>
+</div>
+<!--
+<div id="openhand">
+<span id='its'>You got</span><span id="dis1"></span>
+</div>
+<div>
+<p>With <span id="dis2"></span> in your mind,</p><br/>
+<p>You chose <span id="dis3"></span> for <span id="dis4"></span>
+</p>
+<br/>
+<a href='http://flipmy.co.in'>Flip again</a>
+
+</div>
+
+<div id='social'>
+
+ 
+
+<div class="fb-like" data-href="http://flipmy.co.in/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+
+		<a href="https://twitter.com/intent/tweet?button_hashtag=flipmycoin&text=Toss the coin and decide for yourself, its purely fun" class="twitter-hashtag-button" data-related="inerrpeace" data-url="http://flipmy.co.in">Tweet</a>
+      <script>
+	  !function(d,s,id)
+	  {var js,fjs=d.getElementsByTagName(s)[0];
+	  if(!d.getElementById(id)){js=d.createElement(s);
+	  js.id=id;js.src="//platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js,fjs);}}
+	  (document,"script","twitter-wjs");
+	  </script>	
+</div>
+-->
+
+
+
+
+</div>
+</div>
+<div class='row-fluid hidden-mobile'>
+<div class='offset2 span7'>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
