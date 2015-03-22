@@ -1,0 +1,213 @@
+div.dynamic,div.ht,div.httext,div.event,div.intheair
+{
+/*position:absolute;*/
+/*border:2px solid;*/
+margin-top:5%;
+height:30em;
+}
+
+div.event,div.ht,div.httext,div.intheair
+{
+display:none;
+}
+
+
+
+#mindtext,#httext
+{
+width:100%;
+}
+html
+{
+font-family:"Comic Sans MS";
+}
+.pane
+{
+margin-top:1em;
+/*font-size:150%;*/
+}
+#openhand
+{
+margin-top:1em;
+margin-bottom:3em;
+}
+#textclick,#clickable
+{
+margin-left:5%;
+}
+textarea
+{
+font-size:large;
+}
+#what,#mindtext,#httext,h2,h3
+{
+font-family:"Comic Sans MS";
+}
+#what
+{
+margin-left:1em;
+}
+.pick
+{
+font-size:250%;
+margin:1em;
+width:100%;
+text-align:center;
+background-color:#00838F; /*  #669999*/
+color:white;
+cursor:pointer;
+width:100%;
+}
+.pick:hover
+{
+background-color:white;
+color:black;
+}
+.thumbnail
+{
+
+}
+.chk
+{
+width:100%;
+padding-bottom:2em;
+}
+.fdp
+{
+	border-top-style:dashed;
+	border-top-color:#0099CC;
+	padding:0.3em;
+}
+#oncemore
+{
+	width:100%;
+}
+.tog
+{
+color:#85ADFF;
+}
+#clickable,.tog
+{
+cursor:pointer;
+}
+.tog:hover
+{
+color:#000000;
+}
+#anno
+{
+/*font-size:150%;*/
+font-size:4em;
+}
+#dis1
+{
+color:#85ADFF;
+font-size:6em;
+width:100%;
+font-weight:bold;
+}
+#dis2,#dis3,#its,#dis4
+{
+color:#800000;
+font-size:150%;
+}
+#its
+{
+margin-right:1em;
+}
+#dis3
+{
+text-decoration: underline;
+}
+.fb-like
+{
+padding-bottom:0.5em;
+}
+.event
+{
+/*font-family: 'Coming Soon', cursive;*/
+font-family: 'Short Stack', cursive;
+}
+
+.fixed2
+{
+margin-top:5em;
+}
+#credits
+{
+margin-left:1em;
+}
+
+
+#htcoin{
+    border:2px solid grey;
+    width:150px;
+    height:150px;
+    text-align:center;
+    line-height:90px; 
+   
+    padding:30px;
+    margin:auto;
+    background-color:#37474F;
+    color:white;
+    font-size:large;
+    
+    border-radius:50%;
+    transform:none;
+    
+    -webkit-animation-name: coinslide; /* Chrome, Safari, Opera */
+   -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-name: coinslide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+      cursor:pointer;
+}
+
+@-webkit-keyframes coinslide {
+    0%   {transform:rotateX(180deg);}
+    25%  {transform:rotateX(130deg);}
+    50%  {transform:rotateX(90deg);}
+    75%  {transform:rotateX(45deg);}
+    100% {transform:rotateX(10deg);}
+}
+@keyframes coinslide {
+    0%   {transform:rotateX(180deg);}
+    25%  {transform:rotateX(130deg);}
+    50%  {transform:rotateX(90deg);}
+    75%  {transform:rotateX(45deg);}
+    100% {transform:rotateX(10deg);}
+}
+
+@media (max-width: 480px) {
+textarea
+{
+    font-size:large;
+    color:#3f51b5;
+    
+}
+div.dynamic,div.ht,div.httext,div.event,div.intheair
+{
+/*position:absolute;*/
+/*border:2px solid;*/
+margin-top:5%;
+height:50em;
+}
+div.intheair
+{
+width:100%;
+}
+
+#htcoin
+{
+	width:200px;
+    height:200px;
+    text-align:center;
+    line-height:120px; 
+   
+    padding:30px;
+}
+    
+}
